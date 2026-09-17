@@ -1,0 +1,62 @@
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  height: 518px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.hero,
+.cell {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: var(--color-surface-hover);
+  overflow: hidden;
+}
+
+.hero img,
+.cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter var(--duration-fast) var(--ease-standard);
+}
+
+.hero:hover img,
+.cell:hover img {
+  filter: brightness(0.82);
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+
+.hero {
+  grid-row: 1;
+}
+
+.showAll {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.showAll:hover {
+  background: var(--color-surface-hover);
+}

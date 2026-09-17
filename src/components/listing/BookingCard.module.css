@@ -1,0 +1,151 @@
+.bookingRail {
+  position: sticky;
+  top: 104px;
+  margin-top: 48px;
+  align-self: start;
+}
+
+.bookingRailFixed {
+  position: sticky;
+  top: 104px;
+}
+
+.discount {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding: 15px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+}
+
+.discount button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  background: #f7f7f7;
+  font-weight: 600;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 24px;
+}
+
+@media (max-width: 900px) {
+  .bookingRail {
+    position: static;
+    margin-top: 0;
+  }
+
+  .bookingRailFixed {
+    position: static;
+  }
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.night {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.dateGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.dateCell,
+.guestCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.dateCell:first-child {
+  border-right: 1px solid var(--color-border-strong);
+}
+
+.guestCell {
+  grid-column: span 2;
+  border-bottom: none;
+}
+
+.dateLabel {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary);
+}
+
+.dateValue {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+.reserve {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, #e61e4d, #d70466);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  transition: filter var(--duration-fast) var(--ease-standard);
+}
+
+.reserve:hover {
+  filter: brightness(0.92);
+}
+
+.disclaimer {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.card::after {
+  content: "Free cancellation before 17 October";
+  display: block;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f7f7f7;
+  color: var(--color-text-secondary);
+  text-align: center;
+  font-size: 13px;
+}
+
+.ratingSummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}

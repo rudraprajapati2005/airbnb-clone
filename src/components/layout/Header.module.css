@@ -1,0 +1,123 @@
+.header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-inline: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--color-brand);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+  letter-spacing: -0.02em;
+}
+.searchHouseImg {
+  width: 35px;
+  height: 25px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 6px 8px 6px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+.searchItem {
+  padding: 0 18px;
+  border: 0;
+  border-right: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logo svg{
+  height : 64px;
+  width :64px;
+}
+
+.guests {
+  color: var(--color-text-secondary);
+  border-right: 0;
+  font-weight: 400;
+}
+
+.searchButton {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-brand);
+  color: white;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.host,
+.circleButton {
+  border: 0;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.host {
+  padding: 12px 16px;
+}
+
+.circleButton {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f7f7f7;
+}
+
+.searchItem:hover,
+.host:hover,
+.circleButton:hover {
+  background: var(--color-surface-hover);
+}
+
+@media (max-width: 1100px) {
+  .inner {
+    width: calc(100% - 48px);
+  }
+
+  .searchBar {
+    min-width: 360px;
+  }
+}

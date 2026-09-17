@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-pill);
+  padding: 8px 12px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.ghost:hover {
+  background: var(--color-surface-hover);
+}
+
+.solid {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  padding: 10px 14px;
+}
+
+.solid:hover {
+  background: var(--color-surface-hover);
+}
+
+.overlay {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.overlay:disabled:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
