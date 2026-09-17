@@ -1,10 +1,7 @@
-# AI-Assisted Development — Prompt Log
-
 This documents the actual sequence of prompts given to Claude (used directly in
 Claude's chat/computer-use environment, no IDE agents) to produce this
 submission.
 
-## Prompt 1 — Full assignment brief
 
 A single detailed brief was provided, attaching:
 - The Playpower Labs assignment PDF (`Playpower_Labs_Assignment__Airbnb-Clone_App.pdf`).
@@ -53,36 +50,30 @@ Claude's response to this prompt:
    changed to render on top of (rather than instead of) the Photo Tour.
 7. Wrote the production architecture diagram as a standalone SVG.
 
-## Prompt 2 — "Continue"
 
 A short follow-up asking Claude to continue and finish the remaining
 deliverables (README, this prompt log, project cleanup, zipping, and
 presenting the final files).
 
-## Prompt 3 — Save and share controls
 
 When I click on Save, convert the heart to a fully pink heart with no black
 border, and change the label from "Save" to "Saved" on click. Underline the
 text of both the Save and Share buttons.
 
-## Prompt 4 — Review category row
 
 In the review category row, keep Comfort 6, Accuracy 5, Hot tub 5, Condition
 4, Hospitality 8, Cleanliness 4, and Amenities 2. Remove Photos, then append
 Decor 2, Indoor Spaces 2, and Location 2. Make all categories use font weight
 500 and keep them on one horizontally scrollable row.
 
-## Prompt 5 — Hide the category scrollbar
 
 Remove the scrollbar below the review category row while preserving its
 horizontal scrolling behavior.
 
-## Prompt 6 — Laurel assets around the review score
 
 Use the added `laurel-left.png` and `laurel-right.png` images on the sides of
 the 4.95 review score.
 
-## Prompt 7 — Replace the gallery icon
 
 Replace the existing four-square SVG icon:
 
@@ -93,15 +84,12 @@ Replace the existing four-square SVG icon:
 with the filled nine-dot SVG using the 16 by 16 viewBox, presentation role,
 non-focusable behavior, current-color fill, and the supplied path data.
 
-## Prompt 8 — Resize the gallery icon
 
 The new nine-dot icon is very large; adjust it to a smaller size.
 
-## Prompt 9 — Update this prompt log
 
 Write all of the prompts used for this project into `ai-prompts.md`.
 
-## Previous chat prompts — verbatim follow-ups
 
 The following follow-up prompts were given in the previous project chats:
 
